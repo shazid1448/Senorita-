@@ -41,11 +41,38 @@ export default function HeroSection() {
           <Heart className="w-3 h-3 text-romantic-rose-bright fill-romantic-rose-bright/50" />
         </motion.div>
 
+        {/* Romantic Couple Hero Portrait Photo */}
+        {(content.couplePhoto || content.hero?.couplePhoto) && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: 15 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="relative mx-auto my-1 sm:my-2 inline-block group"
+          >
+            {/* Ambient Animated Glowing Halo */}
+            <div className="absolute -inset-2 sm:-inset-2.5 rounded-full bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy-light opacity-75 blur-md group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse-glow" />
+
+            {/* Photo Avatar Frame */}
+            <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full p-1 sm:p-1.5 bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy shadow-2xl overflow-hidden border-2 border-white/25">
+              <img
+                src={content.couplePhoto || content.hero?.couplePhoto}
+                alt={coupleTitle}
+                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 select-none"
+              />
+            </div>
+
+            {/* Floating Heart Accent Badge */}
+            <div className="absolute bottom-0 right-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-romantic-burgundy border-2 border-romantic-gold/80 flex items-center justify-center text-romantic-rose shadow-lg group-hover:scale-110 transition-transform">
+              <Heart className="w-4 h-4 fill-romantic-rose-bright text-romantic-rose-bright animate-heartbeat" />
+            </div>
+          </motion.div>
+        )}
+
         {/* Grand Couple Monogram & Names */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
           className="space-y-2 sm:space-y-3 px-2"
         >
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white dark:text-white leading-tight break-words">
