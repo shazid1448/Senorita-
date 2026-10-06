@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from './components/navigation/Navbar';
-import MobileBottomNav from './components/navigation/MobileBottomNav';
 import HeroSection from './components/hero/HeroSection';
 import TimelineSection from './components/timeline/TimelineSection';
 import GallerySection from './components/gallery/GallerySection';
@@ -18,7 +17,7 @@ export default function App() {
   const [adminOpen, setAdminOpen] = useState(false);
 
   return (
-    <div className="relative min-h-[100svh] overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white pb-20 lg:pb-0">
+    <div className="relative min-h-[100svh] overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white">
       {/* Desktop Heart Cursor Follower */}
       <HeartCursor />
 
@@ -57,9 +56,6 @@ export default function App() {
 
       {/* 9. Footer */}
       <Footer onOpenAdmin={() => setAdminOpen(true)} />
-
-      {/* Mobile Floating Bottom Navigation Dock */}
-      <MobileBottomNav />
 
       {/* Admin Studio 8-Tab Modal */}
       <AdminModal isOpen={adminOpen} onClose={() => setAdminOpen(false)} />

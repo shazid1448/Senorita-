@@ -42,28 +42,30 @@ export default function HeroSection() {
           <Heart className="w-3 h-3 text-romantic-rose-bright fill-romantic-rose-bright/50" />
         </motion.div>
 
-        {/* Romantic Couple Picture - Right Under Eternally Bound Together */}
+        {/* Romantic Couple Picture - Strictly Centered, Square, and Bigger */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.85, y: 15 }}
+          initial={{ opacity: 0, scale: 0.9, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="relative mx-auto my-2 sm:my-3 inline-block group"
+          className="w-full flex justify-center items-center my-3 sm:my-5"
         >
-          {/* Ambient Glowing Halo */}
-          <div className="absolute -inset-2 sm:-inset-3 rounded-full bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy opacity-80 blur-md group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse-glow" />
+          <div className="relative group">
+            {/* Ambient Glowing Halo */}
+            <div className="absolute -inset-2.5 sm:-inset-3.5 rounded-3xl bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy opacity-75 blur-lg group-hover:opacity-100 group-hover:blur-2xl transition-all duration-500 animate-pulse-glow" />
 
-          {/* Photo Avatar Frame */}
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full p-1 sm:p-1.5 bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy shadow-2xl overflow-hidden border-2 border-white/30">
-            <img
-              src={couplePhoto}
-              alt={coupleTitle}
-              className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 select-none bg-romantic-burgundy-dark"
-            />
-          </div>
+            {/* Square Photo Frame with rounded-3xl corners */}
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-3xl p-1.5 sm:p-2 bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy shadow-2xl overflow-hidden border-2 border-white/30">
+              <img
+                src={couplePhoto}
+                alt={coupleTitle}
+                className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500 select-none bg-romantic-burgundy-dark"
+              />
+            </div>
 
-          {/* Floating Heart Accent Badge */}
-          <div className="absolute bottom-1 right-1 sm:bottom-1.5 sm:right-1.5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-romantic-burgundy border-2 border-romantic-gold/80 flex items-center justify-center text-romantic-rose shadow-lg group-hover:scale-115 transition-transform">
-            <Heart className="w-4 h-4 fill-romantic-rose-bright text-romantic-rose-bright animate-heartbeat" />
+            {/* Floating Heart Accent Badge */}
+            <div className="absolute -bottom-2 -right-2 sm:-bottom-2.5 sm:-right-2.5 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-romantic-burgundy border-2 border-romantic-gold/80 flex items-center justify-center text-romantic-rose shadow-xl group-hover:scale-110 transition-transform">
+              <Heart className="w-5 h-5 fill-romantic-rose-bright text-romantic-rose-bright animate-heartbeat" />
+            </div>
           </div>
         </motion.div>
 

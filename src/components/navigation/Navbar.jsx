@@ -11,11 +11,26 @@ export default function Navbar({ onOpenAdmin }) {
   const { content } = useContent();
   const { isPlaying, togglePlay } = useAudio();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    let prevScrollY = window.scrollY;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      const currentScrollY = window.scrollY;
+      setIsScrolled(currentScrollY > 30);
+
+      if (currentScrollY < 40) {
+        setIsVisible(true);
+      } else if (currentScrollY > prevScrollY + 8) {
+        // Scrolling down -> hide navbar smoothly
+        setIsVisible(false);
+      } else if (currentScrollY < prevScrollY - 8) {
+        // Scrolling up -> show navbar
+        setIsVisible(true);
+      }
+      prevScrollY = currentScrollY;
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,6 +49,8 @@ export default function Navbar({ onOpenAdmin }) {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 safe-pt px-2 sm:px-6 md:px-8 ${
         isScrolled ? 'py-2' : 'py-3 sm:py-5'
+      } ${
+        isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
       }`}
     >
       <div className="max-w-6xl mx-auto">
