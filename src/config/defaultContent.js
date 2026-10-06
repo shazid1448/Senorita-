@@ -12,7 +12,7 @@ export const DEFAULT_CONTENT = {
   coupleTitle: "Shazid & Nithia",
   coupleTitleBn: "সাজিদ ও প্রমি",
   monogram: "S & N",
-  couplePhoto: "/assets/images/couple-hero.svg",
+  couplePhoto: "/assets/images/our-photo.jpg",
 
   // Relationship Start Date
   startDate: "2023-12-12T00:00:00",

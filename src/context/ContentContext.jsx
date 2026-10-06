@@ -12,7 +12,9 @@ export function ContentProvider({ children }) {
         return {
           ...DEFAULT_CONTENT,
           ...parsed,
-          couplePhoto: parsed.couplePhoto || DEFAULT_CONTENT.couplePhoto
+          couplePhoto: parsed.couplePhoto && parsed.couplePhoto !== "/assets/images/couple-hero.svg"
+            ? parsed.couplePhoto
+            : DEFAULT_CONTENT.couplePhoto
         };
       }
     } catch (e) {
