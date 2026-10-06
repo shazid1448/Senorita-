@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/navigation/Navbar';
+import MobileBottomNav from './components/navigation/MobileBottomNav';
 import HeroSection from './components/hero/HeroSection';
 import TimelineSection from './components/timeline/TimelineSection';
 import GallerySection from './components/gallery/GallerySection';
@@ -17,18 +18,18 @@ export default function App() {
   const [adminOpen, setAdminOpen] = useState(false);
 
   return (
-    <div className="relative min-h-[100svh] overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white">
+    <div className="relative min-h-[100svh] overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white pb-20 lg:pb-0">
       {/* Desktop Heart Cursor Follower */}
       <HeartCursor />
 
       {/* Ambient Drifting Rose Petals & Atmospheric Glow */}
       <FloatingPetals />
 
-      {/* Floating Pill Navigation */}
+      {/* Floating Pill Top Header */}
       <Navbar onOpenAdmin={() => setAdminOpen(true)} />
 
       {/* Main Sections in Exact Required Order */}
-      <main className="relative z-10 space-y-12 sm:space-y-16 md:space-y-24">
+      <main className="relative z-10 space-y-10 sm:space-y-16 md:space-y-24">
         {/* 1. Hero with Day Counter */}
         <HeroSection />
 
@@ -56,6 +57,9 @@ export default function App() {
 
       {/* 9. Footer */}
       <Footer onOpenAdmin={() => setAdminOpen(true)} />
+
+      {/* Mobile Floating Bottom Navigation Dock */}
+      <MobileBottomNav />
 
       {/* Admin Studio 8-Tab Modal */}
       <AdminModal isOpen={adminOpen} onClose={() => setAdminOpen(false)} />

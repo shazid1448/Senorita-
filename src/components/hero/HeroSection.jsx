@@ -18,24 +18,24 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[100svh] flex flex-col justify-center items-center text-center px-4 pt-28 pb-16 overflow-hidden"
+      className="relative min-h-[100svh] flex flex-col justify-center items-center text-center px-3 sm:px-6 pt-24 sm:pt-28 pb-16 overflow-hidden"
     >
       {/* Cinematic Ambient Parallax Background Rings */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center -z-10">
-        <div className="w-[32rem] sm:w-[48rem] h-[32rem] sm:h-[48rem] rounded-full border border-romantic-rose/10 animate-spin-slow" />
-        <div className="w-[24rem] sm:w-[36rem] h-[24rem] sm:h-[36rem] rounded-full border border-romantic-burgundy/20 animate-spin-slow [animation-direction:reverse]" />
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center -z-10 overflow-hidden">
+        <div className="w-[26rem] sm:w-[42rem] md:w-[48rem] h-[26rem] sm:h-[42rem] md:h-[48rem] rounded-full border border-romantic-rose/10 animate-spin-slow" />
+        <div className="w-[20rem] sm:w-[32rem] md:w-[36rem] h-[20rem] sm:h-[32rem] md:h-[36rem] rounded-full border border-romantic-burgundy/20 animate-spin-slow [animation-direction:reverse]" />
       </div>
 
-      <div className="max-w-4xl mx-auto space-y-6">
+      <div className="w-full max-w-4xl mx-auto space-y-5 sm:space-y-6">
         {/* Top Floating Badge */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-romantic-burgundy/50 border border-romantic-rose/30 shadow-glow-rose backdrop-blur-md"
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-romantic-burgundy/50 border border-romantic-rose/30 shadow-glow-rose backdrop-blur-md"
         >
           <Sparkles className="w-3.5 h-3.5 text-romantic-gold animate-pulse" />
-          <span className="text-xs sm:text-sm font-medium tracking-widest uppercase text-romantic-rose">
+          <span className="text-[11px] sm:text-xs font-semibold tracking-widest uppercase text-romantic-rose">
             {badge}
           </span>
           <Heart className="w-3 h-3 text-romantic-rose-bright fill-romantic-rose-bright/50" />
@@ -43,16 +43,16 @@ export default function HeroSection() {
 
         {/* Grand Couple Monogram & Names */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
-          className="space-y-3"
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="space-y-2 sm:space-y-3 px-2"
         >
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white dark:text-white leading-tight">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white dark:text-white leading-tight break-words">
             <span className="block italic text-glow-rose">{coupleTitle}</span>
           </h1>
 
-          <p className="font-serif text-xl sm:text-2xl md:text-3xl text-romantic-rose-bright/90 font-light tracking-wide max-w-2xl mx-auto">
+          <p className="font-serif text-lg sm:text-2xl md:text-3xl text-romantic-rose-bright/90 font-light tracking-wide max-w-2xl mx-auto leading-snug">
             {headline}
           </p>
         </motion.div>
@@ -62,22 +62,22 @@ export default function HeroSection() {
 
         {/* Romantic Subtitle & Quote */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="max-w-2xl mx-auto space-y-4"
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="max-w-2xl mx-auto space-y-3 px-2"
         >
-          <p className="text-sm sm:text-base text-romantic-rose-muted leading-relaxed px-4">
+          <p className="text-xs sm:text-base text-romantic-rose-muted leading-relaxed">
             {subtitle}
           </p>
 
           {quote && (
-            <div className="pt-2 px-6">
-              <blockquote className="font-serif italic text-base sm:text-lg text-romantic-gold/90 max-w-xl mx-auto">
+            <div className="pt-2 px-4 sm:px-6">
+              <blockquote className="font-serif italic text-sm sm:text-lg text-romantic-gold/90 max-w-xl mx-auto leading-relaxed">
                 {quote}
               </blockquote>
               {content.hero?.quoteAuthor && (
-                <cite className="block text-xs uppercase tracking-widest text-romantic-gold/60 mt-1 not-italic">
+                <cite className="block text-[11px] sm:text-xs uppercase tracking-widest text-romantic-gold/60 mt-1 not-italic font-sans">
                   — {content.hero.quoteAuthor}
                 </cite>
               )}
@@ -85,16 +85,16 @@ export default function HeroSection() {
           )}
         </motion.div>
 
-        {/* Action CTAs */}
+        {/* Action CTAs - Responsive Full Width on Phone */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="pt-4 flex flex-wrap items-center justify-center gap-4"
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-xs sm:max-w-none mx-auto w-full"
         >
           <a
             href="#story"
-            className="btn-romantic-gradient px-8 py-3.5 rounded-full text-sm font-semibold tracking-wider flex items-center gap-2 shadow-glow-rose group"
+            className="btn-romantic-gradient w-full sm:w-auto px-7 py-3.5 rounded-full text-sm font-semibold tracking-wider flex items-center justify-center gap-2 shadow-glow-rose group min-h-[46px]"
           >
             <span>{isBn ? 'আমাদের গল্প পড়ুন' : 'Read Our Story'}</span>
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
@@ -102,7 +102,7 @@ export default function HeroSection() {
 
           <a
             href="#letter"
-            className="px-7 py-3 rounded-full text-sm font-medium tracking-wide border border-romantic-rose/30 bg-romantic-burgundy-dark/50 hover:bg-romantic-burgundy/60 text-romantic-text hover:text-white transition-all flex items-center gap-2 backdrop-blur-md"
+            className="w-full sm:w-auto px-6 py-3 rounded-full text-sm font-medium tracking-wide border border-romantic-rose/30 bg-romantic-burgundy-dark/50 hover:bg-romantic-burgundy/60 text-romantic-text hover:text-white transition-all flex items-center justify-center gap-2 backdrop-blur-md min-h-[46px]"
           >
             <Mail className="w-4 h-4 text-romantic-rose" />
             <span>{isBn ? 'ভালোবাসার চিঠি' : 'Open Love Letter'}</span>
