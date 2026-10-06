@@ -1,5 +1,19 @@
 {
+  "cleanUrls": true,
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
     {
       "source": "/assets/(.*)",
       "headers": [
@@ -10,18 +24,18 @@
       ]
     },
     {
-      "source": "/favicon.svg",
+      "source": "/index.html",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400"
+          "value": "no-cache, no-store, must-revalidate"
         }
       ]
     }
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!assets/|favicon\\.svg|manifest\\.webmanifest|sw\\.js|content\\.json).*)",
       "destination": "/index.html"
     }
   ]

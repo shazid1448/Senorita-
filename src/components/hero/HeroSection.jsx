@@ -9,12 +9,12 @@ export default function HeroSection() {
   const { content } = useContent();
   const { isBn, getField } = useLanguage();
 
-  const coupleTitle = isBn && content.coupleTitleBn ? content.coupleTitleBn : content.coupleTitle;
-  const headline = getField(content.hero, 'headline') || content.hero.headline;
-  const subtitle = getField(content.hero, 'subtitle') || content.hero.subtitle;
-  const quote = getField(content.hero, 'quote') || content.hero.quote;
-  const badge = getField(content.hero, 'badge') || content.hero.badge;
-  const couplePhoto = content.couplePhoto || content.hero?.couplePhoto || "/assets/images/couple-hero.svg";
+  const coupleTitle = isBn && content?.coupleTitleBn ? content.coupleTitleBn : (content?.coupleTitle || 'Shazid & Nithia');
+  const headline = getField(content?.hero, 'headline') || content?.hero?.headline || 'Two Souls, One Heart';
+  const subtitle = getField(content?.hero, 'subtitle') || content?.hero?.subtitle || '';
+  const quote = getField(content?.hero, 'quote') || content?.hero?.quote || '';
+  const badge = getField(content?.hero, 'badge') || content?.hero?.badge || 'Eternally Bound Together ✨';
+  const couplePhoto = content?.couplePhoto || content?.hero?.couplePhoto || "/assets/images/couple-hero.svg";
 
   return (
     <section

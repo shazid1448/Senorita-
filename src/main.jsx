@@ -7,16 +7,20 @@ import { LanguageProvider } from './context/LanguageContext';
 import { ContentProvider } from './context/ContentContext';
 import { AudioProvider } from './context/AudioContext';
 
+import ErrorBoundary from './components/common/ErrorBoundary';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ContentProvider>
-      <LanguageProvider>
-        <ThemeProvider>
-          <AudioProvider>
-            <App />
-          </AudioProvider>
-        </ThemeProvider>
-      </LanguageProvider>
-    </ContentProvider>
+    <ErrorBoundary>
+      <ContentProvider>
+        <LanguageProvider>
+          <ThemeProvider>
+            <AudioProvider>
+              <App />
+            </AudioProvider>
+          </ThemeProvider>
+        </LanguageProvider>
+      </ContentProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );

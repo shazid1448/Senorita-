@@ -70,11 +70,11 @@
     </div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      // Register service worker after full window load
+      // Clean up legacy service workers to prevent cache trapping and blank screen issues
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
-        });
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          for (var r of regs) { r.unregister(); }
+        }).catch(function() {});
       }
     </script>
   </body>

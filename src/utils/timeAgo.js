@@ -9,7 +9,10 @@ export function toBengaliNumber(num) {
 }
 
 export function calculateLoveTime(startDateString) {
-  const start = new Date(startDateString);
+  let start = new Date(startDateString);
+  if (isNaN(start.getTime())) {
+    start = new Date('2023-12-12T00:00:00');
+  }
   const now = new Date();
   let diffMs = now.getTime() - start.getTime();
 
@@ -57,7 +60,8 @@ export function calculateLoveTime(startDateString) {
 }
 
 export function calculateDaysRemaining(targetDateString) {
-  const target = new Date(targetDateString);
+  let target = new Date(targetDateString);
+  if (isNaN(target.getTime())) return 0;
   const now = new Date();
   
   // Set both to start of day for clean day diff
