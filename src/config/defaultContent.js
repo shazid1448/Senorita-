@@ -4,7 +4,7 @@
  */
 
 export const DEFAULT_CONTENT = {
-  version: 3,
+  version: 4,
   // Couple Profile
   groomName: "Shazid Ahmed",
   groomNameBn: "সাজিদ আহমেদ",
@@ -67,7 +67,8 @@ export const DEFAULT_CONTENT = {
       descriptionBn: "আমার জীবনের সবচেয়ে সুন্দর দিন। প্রথমবার তোমাকে নিজের চোখে দেখলাম। পেছন থেকে তোমার সেই মিষ্টি ডাক—'পেছনে তাকাও'—আজও কানে বাজে! রিকশায় পাশাপাশি বসা, আলতো করে তোমার হাত ধরা, তোমার হাতের রান্না খাওয়া আর চা মামার সেই কথা—'মামার জন্য অপেক্ষা করছেন?'—সব আজও একদম তাজা।",
       icon: "Heart",
       tag: "In Reality",
-      tagBn: "বাস্তবতার স্পর্শ"
+      tagBn: "বাস্তবতার স্পর্শ",
+      image: "/assets/images/first-day.jpg"
     },
     {
       id: "tl-4",
