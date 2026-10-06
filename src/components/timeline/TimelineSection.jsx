@@ -100,6 +100,18 @@ export default function TimelineSection() {
                           {titleText}
                         </h3>
 
+                        {/* Optional Milestone Photo */}
+                        {item.image && (
+                          <div className="my-3 sm:my-4 rounded-xl sm:rounded-2xl overflow-hidden border border-romantic-rose/25 bg-romantic-burgundy-dark/50 shadow-md group-hover:border-romantic-rose/50 transition-all">
+                            <img
+                              src={item.image}
+                              alt={titleText}
+                              loading="lazy"
+                              className="w-full h-44 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500 select-none"
+                            />
+                          </div>
+                        )}
+
                         {/* Description */}
                         <p className="text-xs sm:text-sm md:text-base text-romantic-rose-muted leading-relaxed">
                           {descText}

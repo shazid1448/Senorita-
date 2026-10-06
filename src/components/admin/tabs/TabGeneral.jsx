@@ -78,10 +78,10 @@ export default function TabGeneral() {
             <div className="flex flex-wrap items-center gap-3">
               <label className="btn-romantic-gradient px-4 py-2 rounded-full text-xs font-semibold cursor-pointer flex items-center gap-2 shadow-sm min-h-[40px]">
                 <Upload className="w-3.5 h-3.5" />
-                <span>{isCompressing ? 'Compressing...' : 'Upload Picture of You Both'}</span>
+                <span>{isCompressing ? 'Compressing...' : 'Upload Picture of You Both (JPG / PNG)'}</span>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/jpeg,image/png,image/webp,image/jpg,image/*"
                   onChange={handleCouplePhotoUpload}
                   disabled={isCompressing}
                   className="hidden"
