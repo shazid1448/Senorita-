@@ -1,10 +1,10 @@
 import React from 'react';
 import { useContent } from '../../context/ContentContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { Heart, Sparkles, Lock } from 'lucide-react';
+import { Heart, Sparkles, Lock, RefreshCw } from 'lucide-react';
 
 export default function Footer({ onOpenAdmin }) {
-  const { content } = useContent();
+  const { content, forceRefreshFromServer } = useContent();
   const { t, isBn } = useLanguage();
 
   return (
@@ -31,14 +31,25 @@ export default function Footer({ onOpenAdmin }) {
         <div className="pt-6 border-t border-romantic-rose/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-romantic-rose-muted/70">
           <p>© {new Date().getFullYear()} {content.coupleTitle}. {t.footer.forever}.</p>
 
-          <button
-            onClick={onOpenAdmin}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:text-white hover:bg-romantic-rose/10 transition-all min-h-[44px]"
-            title={t.footer.adminBtn}
-          >
-            <Lock className="w-3.5 h-3.5" />
-            <span>{t.footer.adminBtn}</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => forceRefreshFromServer()}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:text-white hover:bg-romantic-rose/10 transition-all min-h-[44px]"
+              title={isBn ? "সার্ভার থেকে সর্বশেষ আপডেট রিফ্রেশ করুন" : "Fetch latest updates from server"}
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span>{isBn ? 'আপডেট চেক করুন' : 'Check Updates'}</span>
+            </button>
+
+            <button
+              onClick={onOpenAdmin}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:text-white hover:bg-romantic-rose/10 transition-all min-h-[44px]"
+              title={t.footer.adminBtn}
+            >
+              <Lock className="w-3.5 h-3.5" />
+              <span>{t.footer.adminBtn}</span>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

@@ -4,6 +4,7 @@
  */
 
 export const DEFAULT_CONTENT = {
+  version: 3,
   // Couple Profile
   groomName: "Shazid Ahmed",
   groomNameBn: "সাজিদ আহমেদ",

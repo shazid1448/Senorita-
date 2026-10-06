@@ -12,13 +12,23 @@ import Footer from './components/footer/Footer';
 import HeartCursor from './components/common/HeartCursor';
 import FloatingPetals from './components/common/FloatingPetals';
 
+import { useContent } from './context/ContentContext';
+
 const AdminModal = React.lazy(() => import('./components/admin/AdminModal'));
 
 export default function App() {
   const [adminOpen, setAdminOpen] = useState(false);
+  const { syncToast } = useContent();
 
   return (
     <div className="relative min-h-[100svh] bg-romantic-bg text-romantic-text overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white">
+      {/* Sync Toast Notification */}
+      {syncToast && (
+        <div className="fixed top-16 sm:top-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-romantic-burgundy-dark/90 border border-romantic-rose/60 text-white text-xs shadow-glow-rose backdrop-blur-md flex items-center gap-2 animate-pulse">
+          <span>{syncToast}</span>
+        </div>
+      )}
+
       {/* Desktop Heart Cursor Follower */}
       <HeartCursor />
 

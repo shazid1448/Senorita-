@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
 import { useContent } from '../../../context/ContentContext';
 import { hashPassword, generateSalt, encryptData, decryptData } from '../../../utils/crypto';
-import { KeyRound, ShieldCheck, Download, Upload, RotateCcw, AlertTriangle, Check } from 'lucide-react';
+import { KeyRound, ShieldCheck, Download, Upload, RotateCcw, AlertTriangle, Check, Smartphone, Copy, RefreshCw } from 'lucide-react';
 
 export default function TabSecurity() {
-  const { content, updateContent, exportContent, importContent, resetToDefault } = useContent();
+  const { content, updateContent, exportContent, importContent, resetToDefault, generateSyncLink, forceRefreshFromServer } = useContent();
   const security = content.security || {};
+
+  // Cross-device sync state
+  const [copiedSync, setCopiedSync] = useState(false);
+  const [isRefreshingServer, setIsRefreshingServer] = useState(false);
+
+  const handleCopySyncLink = () => {
+    const link = generateSyncLink();
+    navigator.clipboard.writeText(link);
+    setCopiedSync(true);
+    setTimeout(() => setCopiedSync(false), 3500);
+  };
+
+  const handleForceServerRefresh = async () => {
+    setIsRefreshingServer(true);
+    await forceRefreshFromServer();
+    setIsRefreshingServer(false);
+  };
 
   // Password change state
   const [currentPw, setCurrentPw] = useState('');
@@ -274,6 +291,54 @@ export default function TabSecurity() {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Cross-Device Sync & Transfer Section */}
+      <div className="pt-4 border-t border-romantic-rose/15 space-y-4">
+        <div>
+          <h4 className="font-serif text-lg text-romantic-rose font-medium flex items-center gap-2">
+            <Smartphone className="w-5 h-5 text-romantic-gold" />
+            <span>Cross-Device Instant Sync (ফোন ও অন্যান্য ব্রাউজারে সিঙ্ক)</span>
+          </h4>
+          <p className="text-xs text-romantic-rose-muted mt-0.5">
+            ল্যাপটপে করা এডিট সরাসরি আপনার ফোনে বা প্রিয়জনের ফোনে পাঠানোর জন্য নিচে লিংকটি কপি করে ফোনে ওপেন করুন।
+          </p>
+        </div>
+
+        <div className="p-4 sm:p-5 rounded-2xl bg-romantic-burgundy-deep border border-romantic-rose/25 space-y-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+            <div>
+              <span className="block text-sm font-semibold text-white">📲 Instant Phone Sync Link</span>
+              <span className="block text-xs text-romantic-rose-muted mt-0.5">
+                এই লিংকটি কপি করে WhatsApp বা মেসেঞ্জারে পাঠিয়ে আপনার ফোনে ক্লিক করলেই সব আপডেট সাথে সাথে যুক্ত হয়ে যাবে।
+              </span>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleCopySyncLink}
+              className="btn-romantic-gradient px-4 py-2.5 rounded-full text-xs font-semibold shrink-0 flex items-center justify-center gap-1.5 shadow-md min-h-[40px]"
+            >
+              {copiedSync ? <Check className="w-4 h-4 text-white" /> : <Copy className="w-4 h-4" />}
+              <span>{copiedSync ? 'Link Copied! (কপি হয়েছে)' : 'Copy Sync Link (লিংক কপি)'}</span>
+            </button>
+          </div>
+
+          <div className="pt-3 border-t border-romantic-rose/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <span className="text-xs text-romantic-rose-muted">
+              ব্রাউজারে পুরোনো ক্যাশ আটকে থাকলে সরাসরি সার্ভার থেকে রিফ্রেশ করতে:
+            </span>
+            <button
+              type="button"
+              onClick={handleForceServerRefresh}
+              disabled={isRefreshingServer}
+              className="px-3 py-1.5 rounded-full border border-romantic-rose/30 bg-romantic-rose/10 hover:bg-romantic-rose/20 text-romantic-rose text-xs font-medium flex items-center gap-1.5 transition-all shrink-0 min-h-[36px]"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 ${isRefreshingServer ? 'animate-spin' : ''}`} />
+              <span>{isRefreshingServer ? 'Refreshing...' : 'Pull Fresh from Server'}</span>
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Export / Import & Factory Reset */}
