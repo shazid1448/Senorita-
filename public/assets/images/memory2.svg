@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d0c26"/>
+      <stop offset="50%" stop-color="#581845"/>
+      <stop offset="100%" stop-color="#900c3f"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg2)" rx="20"/>
+  <!-- Fairy Lights String -->
+  <path d="M20,60 Q160,140 300,70 T580,90" fill="none" stroke="#fcd34d" stroke-width="2" opacity="0.6"/>
+  <circle cx="80" cy="90" r="9" fill="#ffeaa7" filter="url(#glow2)"/>
+  <circle cx="160" cy="110" r="8" fill="#ff7675" filter="url(#glow2)"/>
+  <circle cx="240" cy="95" r="9" fill="#ffeaa7" filter="url(#glow2)"/>
+  <circle cx="320" cy="72" r="8" fill="#fab1a0" filter="url(#glow2)"/>
+  <circle cx="410" cy="80" r="9" fill="#ffeaa7" filter="url(#glow2)"/>
+  <circle cx="500" cy="88" r="8" fill="#ff7675" filter="url(#glow2)"/>
+  <!-- Glowing Heart Lockets -->
+  <g transform="translate(300, 270)">
+    <path d="M0,-30 C0,-60 -45,-60 -45,-20 C-45,20 0,55 0,55 C0,55 45,20 45,-20 C45,-60 0,-60 0,-30 Z" fill="#e84393" filter="url(#glow2)" transform="scale(1.6)"/>
+    <text x="0" y="8" font-family="'Great Vibes', cursive" font-size="34" fill="#ffffff" text-anchor="middle" font-weight="bold">S &amp; N</text>
+  </g>
+  <!-- Floating Sparkles -->
+  <text x="140" y="240" font-size="28" fill="#fcd34d">✨</text>
+  <text x="430" y="220" font-size="28" fill="#fcd34d">✨</text>
+  <text x="210" y="380" font-size="24" fill="#ff7675">💖</text>
+  <text x="370" y="390" font-size="24" fill="#ff7675">💕</text>
+  <!-- Text Label -->
+  <text x="300" y="525" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="bold" fill="#fcd34d" text-anchor="middle" letter-spacing="3">ENDLESS LAUGHTER</text>
+  <text x="300" y="555" font-family="'Great Vibes', cursive, sans-serif" font-size="22" fill="#ffe4e6" text-anchor="middle">Every Moment Is Sweeter With You 💬</text>
+</svg>

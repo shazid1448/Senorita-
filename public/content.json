@@ -1,0 +1,319 @@
+{
+  "groomName": "Shazid Ahmed",
+  "groomNameBn": "সাজিদ আহমেদ",
+  "brideName": "Nithia Promi",
+  "brideNameBn": "নাবিয়া প্রমি",
+  "coupleTitle": "Shazid & Nithia",
+  "coupleTitleBn": "সাজিদ ও প্রমি",
+  "monogram": "S & N",
+  "startDate": "2023-12-12T00:00:00",
+  "hero": {
+    "badge": "Eternally Bound Together ✨",
+    "badgeBn": "চিরকালের ভালোবাসার বন্ধন ✨",
+    "headline": "Two Souls, One Heart, An Eternal Journey",
+    "headlineBn": "দুই হৃদয়, এক আত্মা, অনন্ত ভালোবাসার পথচলা",
+    "subtitle": "Celebrating every beat of our hearts, magical memory, and future promise since December 12, 2023.",
+    "subtitleBn": "১২ ডিসেম্বর ২০২৩ থেকে শুরু করে আমাদের প্রতিটি হৃদস্পন্দন ও অমলিন স্মৃতির মিষ্টি উদযাপন।",
+    "quote": "“In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.”",
+    "quoteBn": "“সমগ্র পৃথিবীতে তোমার মতো হৃদয় আমার জন্য আর নেই। সমগ্র পৃথিবীতে আমার মতো ভালোবাসা তোমার জন্য আর নেই।”",
+    "quoteAuthor": "Maya Angelou"
+  },
+  "timeline": [
+    {
+      "id": "tl-1",
+      "date": "December 12, 2023",
+      "dateBn": "১২ ডিসেম্বর ২০২৩",
+      "title": "The Day Our Story Began ✨",
+      "titleBn": "যেদিন আমাদের গল্পের সূচনা ✨",
+      "description": "It all began with a simple 'hi' and 'hello.' As the conversation flowed, I subtly started asking about her life—from her family background to her daily little wonders. Curiously enough, she happily answered them all! It was a beautiful beginning right there on Facebook chat.",
+      "descriptionBn": "সবকিছু শুরু হয়েছিল সাধারণ একটি 'হাই' আর 'হ্যালো' দিয়ে। কথা বলতে বলতে আমি ওর জীবন, পরিবার আর পছন্দ নিয়ে একশোরও বেশি প্রশ্ন করে ফেললাম—আর অবাক কাণ্ড, ও কত মিষ্টি হেসে সব উত্তর দিল! সেই ফেসবুক চ্যাট থেকেই জন্ম নিল আমাদের অনন্য ভালোবাসার গল্প।",
+      "icon": "Sparkles",
+      "tag": "Day One",
+      "tagBn": "প্রথম দিন"
+    },
+    {
+      "id": "tl-2",
+      "date": "Early 2024",
+      "dateBn": "শুরুর ২০২৪",
+      "title": "Our Late-Night Conversations 💬",
+      "titleBn": "নিঝুম রাতের মিষ্টি আলাপ 💬",
+      "description": "Hours felt like fleeting minutes as we talked about our deepest dreams, laughter, fears, and hopes, discovering how seamlessly our two souls intertwine.",
+      "descriptionBn": "ঘণ্টার পর ঘণ্টা কথা বলে সময় কীভাবে চোখের পলকে পেরিয়ে যেত টেরই পেতাম না। হাসাহাসি, মনের গভীর স্বপ্ন আর অনুভূতির গল্পে আমরা বুঝতে পারলাম আমাদের আত্মা কতটা এক সুতোয় গাঁথা।",
+      "icon": "Moon",
+      "tag": "Heart to Heart",
+      "tagBn": "মনের মিলন"
+    },
+    {
+      "id": "tl-3",
+      "date": "January 26, 2024",
+      "dateBn": "২৬ জানুয়ারি ২০২৪",
+      "title": "Our First Face to Face Meet 💙",
+      "titleBn": "প্রথমবার মুখোমুখি দেখা 💙",
+      "description": "The most beautiful day of my life. Today, I saw you with my own eyes. Your call from behind, 'Look back,' still echoes in my heart. At first, you looked stunning, but as moments passed you looked breathtakingly angelic. Sitting side by side in the rickshaw, holding your gentle hand, and hearing the tea vendor uncle smile—those memories will forever linger in my soul.",
+      "descriptionBn": "আমার জীবনের সবচেয়ে সুন্দর দিন। প্রথমবার তোমাকে নিজের চোখে দেখলাম। পেছন থেকে তোমার সেই মিষ্টি ডাক—'পেছনে তাকাও'—আজও কানে বাজে! রিকশায় পাশাপাশি বসা, আলতো করে তোমার হাত ধরা, তোমার হাতের রান্না খাওয়া আর চা মামার সেই কথা—'মামার জন্য অপেক্ষা করছেন?'—সব আজও একদম তাজা।",
+      "icon": "Heart",
+      "tag": "In Reality",
+      "tagBn": "বাস্তবতার স্পর্শ"
+    },
+    {
+      "id": "tl-4",
+      "date": "Mid 2024",
+      "dateBn": "মাঝ ২০২৪",
+      "title": "Falling Deeper in Love 🌸",
+      "titleBn": "গভীর থেকে গভীরতর ভালোবাসা 🌸",
+      "description": "Every single smile of yours brightens my darkest days. I realized with absolute certainty that my favorite place in the entire universe is right beside you.",
+      "descriptionBn": "তোমার একটি মিষ্টি হাসি আমার সমস্ত ক্লান্তি দূর করে দেয়। আমি নিশ্চিতভাবে বুঝে গেলাম—এই পুরো মহাবিশ্বে আমার সবচেয়ে প্রিয় নিরাপদ আশ্রয় তোমার পাশেই।",
+      "icon": "Flower2",
+      "tag": "Unconditional",
+      "tagBn": "নিঃশর্ত প্রেম"
+    },
+    {
+      "id": "tl-5",
+      "date": "December 12, 2024",
+      "dateBn": "১২ ডিসেম্বর ২০২৪",
+      "title": "One Year of Pure Magic 🎉",
+      "titleBn": "ভালোবাসার এক বছর পূর্ণ 🎉",
+      "description": "365 days of laughter, warmth, and growing together. Proof that true love only deepens and gets sweeter with each passing second.",
+      "descriptionBn": "৩৬৫ দিনের অফুরন্ত হাসি, আনন্দ আর একসাথে বেড়ে ওঠা। প্রতিটি দিন প্রমাণ করেছে যে সত্যিকারের ভালোবাসা সময়ের সাথে সাথে কেবল আরও গভীর ও মধুর হয়।",
+      "icon": "Wine",
+      "tag": "1st Anniversary",
+      "tagBn": "প্রথম বার্ষিকী"
+    },
+    {
+      "id": "tl-6",
+      "date": "Today & Every Tomorrow",
+      "dateBn": "আজ ও প্রতিটি আগামীতে",
+      "title": "To Eternity and Beyond 💍",
+      "titleBn": "অনন্তকাল ও তারও পরে 💍",
+      "description": "Every sunrise brings another reason to adore you even more. You are my today, my tomorrow, and my forever.",
+      "descriptionBn": "প্রতিটি ভোর নিয়ে আসে তোমাকে আরও একটু বেশি ভালোবাসার নতুন কারণ। তুমি আমার আজ, তুমি আমার আগামী, আর তুমিই আমার অনন্তকাল।",
+      "icon": "Crown",
+      "tag": "Forever & Always",
+      "tagBn": "চিরদিনের"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-1",
+      "image": "/assets/images/memory1.svg",
+      "caption": "Your radiant smile that lights up my whole universe ✨",
+      "captionBn": "তোমার এক চিলতে হাসি যা আমার পুরো পৃথিবী আলোকিত করে তোলে ✨",
+      "date": "Dec 12, 2023",
+      "rotation": -3
+    },
+    {
+      "id": "gal-2",
+      "image": "/assets/images/memory2.svg",
+      "caption": "Endless laughter and warmth with my favorite person ❤️",
+      "captionBn": "আমার সবচেয়ে প্রিয় মানুষটির সাথে অন্তহীন হাসি আর উষ্ণতা ❤️",
+      "date": "Memories 2024",
+      "rotation": 2.5
+    },
+    {
+      "id": "gal-3",
+      "image": "/assets/images/memory3.svg",
+      "caption": "Hand in hand, ready to conquer the world together 🤝",
+      "captionBn": "হাতে হাত রেখে, পুরো পৃথিবী জয় করার অঙ্গীকার 🤝",
+      "date": "Our Journey",
+      "rotation": -2
+    },
+    {
+      "id": "gal-4",
+      "image": "/assets/images/memory4.svg",
+      "caption": "Every adventure is unforgettable because you are in it 🌹",
+      "captionBn": "প্রতিটি মুহূর্ত অবিস্মরণীয়, কারণ সেখানে তুমি আছো 🌹",
+      "date": "Sweet Moments",
+      "rotation": 3
+    },
+    {
+      "id": "gal-5",
+      "image": "/assets/images/memory5.svg",
+      "caption": "My comfort, my peace, and my happiest home 💫",
+      "captionBn": "আমার শান্তি, আমার আশ্রয়, আর আমার ভালোবাসার ঘর 💫",
+      "date": "Always",
+      "rotation": -1.5
+    },
+    {
+      "id": "gal-6",
+      "image": "/assets/images/memory6.svg",
+      "caption": "Looking forward to making millions more memories with you 🥂",
+      "captionBn": "তোমার সাথে আরও লক্ষ কোটি সুন্দর স্মৃতি গড়ার অপেক্ষায় 🥂",
+      "date": "To Forever",
+      "rotation": 2
+    }
+  ],
+  "letter": {
+    "salutation": "প্রমি (আমার নীল পাখি)💙,",
+    "salutationEn": "My Dearest Promi (My Bluebird) 💙,",
+    "paragraphs": [
+      "আজ বিশেষ কোনো দিন নয়, কোনো উৎসব বা বার্ষিকীও নয়। তাও চিঠিটা লিখছি—কারণ তোমাকে ভালোবাসতে বা মনের কথা বলতে আসলে বিশেষ কোনো তারিখের প্রয়োজন পড়ে না।",
+      "আজ দেখতে দেখতে আমাদের পথচলার হাজার দিন পূর্ণের পথে! এই দীর্ঘ সময় ধরে তুমি যেভাবে আমার পাশে আছ, তা ভেবে প্রতিদিন নতুন করে তোমার প্রেমে পড়ি। শীতের সেই সকালে তোমাকে প্রথম দেখা, প্রথমবার তোমার হাত ধরা, রিকশায় পাশাপাশি বসে থাকা, আর তোমার হাতের রান্না—এই সব স্মৃতি আজও আমার মনে একদম তাজা।",
+      "তুমি জানো, তোমার হাসিমাখা মুখটা দেখলে আমার সারাদিনের সব ক্লান্তি উবে যায়। আমাদের ছোটখাটো মিষ্টি মারামারিতে জয় সবসময় তোমারই হয়, আর সত্যি বলতে—সারা জীবন তোমাকে এভাবেই জিতিয়ে যেতে চাই!",
+      "আমাদের এই সুন্দর স্মৃতির জন্য ধন্যবাদ, আমার নীল পাখি। অনেক ভালোবাসি তোমাকে💙"
+    ],
+    "paragraphsEn": [
+      "Today is not an official holiday, nor is it an anniversary. Yet I write this letter to you—because loving you and speaking my heart needs no special calendar date.",
+      "As time unfolds, each day spent beside you makes me fall in love with you all over again. Seeing you that crisp winter morning, holding your gentle hand for the very first time on that rickshaw ride, and tasting the food cooked by your hands—these memories will forever remain vivid and cherished in my heart.",
+      "You know that whenever I see your smiling face, all the tiredness and worries of my day instantly vanish. In all our cute little arguments, you always win—and honestly, I want to keep letting you win for the rest of my life!",
+      "Thank you for every second of pure magic. I love you infinitely, my sweet bluebird. 💙"
+    ],
+    "closing": "সারা জীবন তোমারই,",
+    "closingEn": "Yours forever and always,",
+    "author": "সাজিদ আহমেদ",
+    "authorEn": "Shazid Ahmed",
+    "sealText": "S & N"
+  },
+  "music": {
+    "title": "Romantic Piano Melody",
+    "artist": "Shazid & Nithia",
+    "audioFile": "/assets/audio/romantic-song.mp3",
+    "synthesizerEnabled": true
+  },
+  "specialDates": [
+    {
+      "id": "sd-1",
+      "title": "Our Love Anniversary",
+      "titleBn": "আমাদের ভালোবাসার বার্ষিকী",
+      "date": "2024-12-12",
+      "icon": "Heart",
+      "description": "The unforgettable day our hearts united ✨",
+      "descriptionBn": "যে অবিস্মরণীয় দিনে আমাদের দুটি মন এক হয়েছিল ✨",
+      "recurring": true
+    },
+    {
+      "id": "sd-2",
+      "title": "First Face-to-Face Meeting",
+      "titleBn": "প্রথম মুখোমুখি দেখা করার দিন",
+      "date": "2024-01-26",
+      "icon": "Sparkles",
+      "description": "The magical rickshaw ride and your radiant smile 💙",
+      "descriptionBn": "সেই জাদুকরী রিকশা ভ্রমণ আর তোমার মিষ্টি হাসি 💙",
+      "recurring": true
+    },
+    {
+      "id": "sd-3",
+      "title": "Valentine's Day Celebration",
+      "titleBn": "বিশ্ব ভালোবাসা দিবস",
+      "date": "2025-02-14",
+      "icon": "Flower2",
+      "description": "A day dedicated to celebrating eternal love 🌹",
+      "descriptionBn": "ভালোবাসা উদযাপনের বিশেষ দিন 🌹",
+      "recurring": true
+    },
+    {
+      "id": "sd-4",
+      "title": "1000 Days of Magic",
+      "titleBn": "১০০০ দিনের পথচলা",
+      "date": "2026-09-07",
+      "icon": "Crown",
+      "description": "A monumental milestone of our unending bond 🥂",
+      "descriptionBn": "আমাদের ভালোবাসার এক অনন্য ঐতিহাসিক মাইলফলক 🥂",
+      "recurring": false
+    }
+  ],
+  "futurePlans": [
+    {
+      "id": "fp-1",
+      "title": "Watch the Northern Lights in a Glass Igloo 🌌",
+      "titleBn": "কাঁচের ইগলুতে বসে একসাথে অরোরা দেখা 🌌",
+      "category": "Travel",
+      "categoryBn": "ভ্রমণ",
+      "completed": false,
+      "notes": "Snuggled under warm blankets watching the green lights dance across the sky."
+    },
+    {
+      "id": "fp-2",
+      "title": "Walk Along the Beach of Cox's Bazar at Sunset 🌅",
+      "titleBn": "কক্সবাজার সমুদ্র সৈকতে গোধূলি লগ্নে হাত ধরে হাঁটা 🌅",
+      "category": "Romantic Escape",
+      "categoryBn": "রোমান্টিক ভ্রমণ",
+      "completed": true,
+      "notes": "Listening to the waves crash as the golden sun touches the ocean."
+    },
+    {
+      "id": "fp-3",
+      "title": "Cook a Candlelit Gourmet Dinner Together 🕯️",
+      "titleBn": "মোমবাতির আলোয় একসাথে দারুণ ডিনার তৈরি করা 🕯️",
+      "category": "Cozy Home",
+      "categoryBn": "গৃহকোণ",
+      "completed": false,
+      "notes": "Soft acoustic jazz playing in the background with handmade treats."
+    },
+    {
+      "id": "fp-4",
+      "title": "Build Our Dream Home Filled with Books & Flowers 🏡",
+      "titleBn": "বই, গাছপালা আর হাসিতে ভরা আমাদের স্বপ্নের নীড় গড়া 🏡",
+      "category": "Life Goals",
+      "categoryBn": "জীবনের স্বপ্ন",
+      "completed": false,
+      "notes": "A sanctuary of unconditional love, peace, and eternal warmth."
+    },
+    {
+      "id": "fp-5",
+      "title": "Take a Snowy Vacation to Switzerland or Kashmir ❄️",
+      "titleBn": "সুইজারল্যান্ড বা কাশ্মীরের বরফে মোড়ানো পাহাড়ে বেড়ানো ❄️",
+      "category": "Travel",
+      "categoryBn": "ভ্রমণ",
+      "completed": false,
+      "notes": "Drinking steaming hot chocolate while admiring snow-capped peaks."
+    }
+  ],
+  "reasons": [
+    "The radiant warmth of your smile that instantly melts away any stress.",
+    "How deeply and genuinely you care about the people around you.",
+    "The adorable way you laugh when something truly amuses you.",
+    "How safe, understood, and peaceful I feel whenever I talk to you.",
+    "Your incredible kindness, patience, and tender heart.",
+    "The way you believe in me even when I doubt myself.",
+    "How effortlessly you make ordinary days feel extraordinary.",
+    "The sparkling curiosity and light in your beautiful eyes.",
+    "Because loving you is the most effortless, beautiful thing I have ever done.",
+    "The unforgettable memories we have created since December 12, 2023.",
+    "Your gentle touch that feels like coming home.",
+    "How you hold my heart with so much devotion and care.",
+    "Your cute little expressions that make you uniquely and wonderfully YOU.",
+    "The comfort of knowing we face the future as one unified team.",
+    "Because out of billions of people in this world, my heart chose you."
+  ],
+  "promises": [
+    {
+      "title": "To Always Listen",
+      "titleBn": "সবসময় মনোযোগ দিয়ে শোনা",
+      "desc": "To hear you with an open heart and never let you feel unheard or alone.",
+      "descBn": "উন্মুক্ত হৃদয়ে তোমার কথা শোনা এবং কখনো তোমাকে একা বা অবহেলিত বোধ করতে না দেওয়া।",
+      "icon": "Headphones"
+    },
+    {
+      "title": "To Stand By You",
+      "titleBn": "সবসময় পাশে থাকা",
+      "desc": "Through sunshine and thunderstorms, I will always be your shield and greatest supporter.",
+      "descBn": "রোদ কিংবা ঝড়, জীবনের প্রতি পদক্ষেপে তোমার ঢাল ও সবচেয়ে বড় ভরসা হয়ে থাকা।",
+      "icon": "Shield"
+    },
+    {
+      "title": "To Keep Romance Alive",
+      "titleBn": "ভালোবাসাকে চিরসবুজ রাখা",
+      "desc": "To never stop courting you, making you smile, and cherishing every moment.",
+      "descBn": "তোমাকে চমকে দেওয়া, মুখে হাসি ফোটানো আর প্রতিটি ক্ষণ উদযাপনে কোনো কমতি না রাখা।",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "To Grow Hand-in-Hand",
+      "titleBn": "হাতে হাত রেখে এগিয়ে যাওয়া",
+      "desc": "To build our dreams together and love you more with every passing dawn.",
+      "descBn": "একসাথে আমাদের স্বপ্নের ভুবন গড়া আর প্রতিটি নতুন ভোরে তোমাকে আরও বেশি ভালোবাসা।",
+      "icon": "Heart"
+    }
+  ],
+  "security": {
+    "salt": "fbf161076f90b00fe837528cc1b17a66",
+    "passwordHash": "071dfde0f5fdbb385700027eaf1f016f1139d7441975f9f259f9b2cdff21c0a1",
+    "passwordHint": "Groom & Bride names together (e.g. Shazid&Promi)",
+    "recoveryKey": "ETERNAL-LOVE-2023",
+    "encryptedPrivateVault": {
+      "salt": "37a33026cc4eb5dc3da5e437180beae0",
+      "iv": "7965cbfe0493186eee90e729",
+      "ciphertext": "d7212aef7ea25115c26b0f8c6fbbac5702d61a5b931ed3cd0ebc17efb36e306da4a793a63cc6b6398d1978203a5e0fbb9715519296d2712b34ea039cb7dfdfbf127ae2f300708aec2923801658113a13e5cf9bf81187521aeca44c4c9b7798d8acfd58315db9e90cdf3ee00c0f29014b3b4376a447b0a0f90fcf7af990f0588346d0c90f7754ce6fb83f7df6bb583ab8071240b2062991d2204bed351570f51c543d0d1167c06b19c5f1b70897b7032c614d6d0ef047294ecbde58953b04dac27d3e4d45e441f704adf09b9db26300a014f971f1968bab72781f57feeafca52104a2cad9316debbab50303e879536ad5fe13f5e2536a907a9a83bd3e7e6d940fd150306260b54728c9adae7d6bcaa114fd78fbb263816d49ae068f6b7fa4e8c2fcc2d4652744a0e299cc7de54f3d7ae731b387680dd8646fc5ed9b4750556e603fe528487dd764701165202a1a87486364f105d45d951e9c91d63bf03b46746f52856476e3e9d364bf1d9927cd98eaba31b4f5d0181e66398e4ad3e25fe7aa22dafcc1325d2b115f5784f57a2732caeb80efffdcd0afb040ae902ed4fb11ae21d2a2bbf48866f01584697f2b3bbf9ed88f8cf2fb0567e9361d4cbfc6374624c4b0e23181382e0d199aedec9bd64072396a35235b16593109f47018a5671a7823ce40aeb0564c78b02058d6108429a2213032354f7490cec9cad0030e095d61c49322012a116934806256a2f257faa238abe50c948e4feba2226be014f186f8abae84b5064c8ceb79bab416afa7ed82dac07423030632dadde1bb2f54521842f58180dd7ebbd4f314772ba5bc80e42bb1e1b777034409e850dbfeb94cd4578c49773325ddb7d0acdd7ce9960e58a7619b7c99b879534bf8585977ccdcae4ea0ff7bb5841f4ad2910a2a5b787056de6492dcac50b86523a53e8c0c5e0fc956301a07514dd2dfe0b61553af764b865e0774a837fe5d8d876f4c56de6d79cc3c35b053c755a31f21f7e2f9e78d2954174532f30cdb07c6db202c70010d316e2cfeaa7db745fff3e528d6206927137aa00db25f2c89c77eacb4cda6b7d574f2f1bf41c324c414ad6b9b16f9e4113e45fb5d93161fa405a119bfab124fd81ba6cbf07e26"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020024"/>
+      <stop offset="45%" stop-color="#090979"/>
+      <stop offset="100%" stop-color="#240046"/>
+    </linearGradient>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg6)" rx="20"/>
+  <!-- Starlight field -->
+  <circle cx="70" cy="80" r="3" fill="#fff" filter="url(#starGlow)"/>
+  <circle cx="140" cy="220" r="2" fill="#ffeaa7"/>
+  <circle cx="210" cy="90" r="2.5" fill="#fff"/>
+  <circle cx="390" cy="110" r="3" fill="#fff" filter="url(#starGlow)"/>
+  <circle cx="480" cy="70" r="2" fill="#ff7675"/>
+  <circle cx="530" cy="240" r="2.5" fill="#ffeaa7"/>
+  <!-- Infinity Love Symbol -->
+  <g transform="translate(300, 270)">
+    <path d="M -80,0 C -80,-40 -30,-40 0,0 C 30,40 80,40 80,0 C 80,-40 30,-40 0,0 C -30,40 -80,40 -80,0 Z" fill="none" stroke="#fcd34d" stroke-width="10" stroke-linecap="round" filter="url(#starGlow)"/>
+    <circle cx="0" cy="0" r="14" fill="#e84393" filter="url(#starGlow)"/>
+  </g>
+  <!-- Shooting Star -->
+  <line x1="120" y1="50" x2="280" y2="130" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <!-- Text Label -->
+  <text x="300" y="525" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="bold" fill="#fcd34d" text-anchor="middle" letter-spacing="3">TO INFINITY</text>
+  <text x="300" y="555" font-family="'Great Vibes', cursive, sans-serif" font-size="22" fill="#ffe4e6" text-anchor="middle">A Lifetime Of Love &amp; A Million More Memories 🥂</text>
+</svg>

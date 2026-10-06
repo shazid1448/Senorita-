@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0b2e"/>
+      <stop offset="50%" stop-color="#3b1344"/>
+      <stop offset="100%" stop-color="#701a55"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff5ea" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffb7b2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffb7b2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg1)" rx="20"/>
+  <!-- Stars -->
+  <circle cx="80" cy="90" r="2" fill="#fff" opacity="0.8"/>
+  <circle cx="150" cy="50" r="1.5" fill="#fff" opacity="0.9"/>
+  <circle cx="230" cy="110" r="2.5" fill="#ffccd5" opacity="0.85"/>
+  <circle cx="480" cy="80" r="2" fill="#fff" opacity="0.75"/>
+  <circle cx="520" cy="160" r="3" fill="#ffeaa7" opacity="0.9"/>
+  <circle cx="370" cy="40" r="1.5" fill="#fff" opacity="0.6"/>
+  <!-- Moon -->
+  <circle cx="300" cy="220" r="140" fill="url(#moonGlow)"/>
+  <circle cx="300" cy="220" r="85" fill="#fffdfa" filter="url(#glow)"/>
+  <!-- Romantic Hills Silhouette -->
+  <path d="M0,520 Q180,420 360,490 T600,450 L600,600 L0,600 Z" fill="#0d0417"/>
+  <path d="M0,550 Q220,490 420,530 T600,510 L600,600 L0,600 Z" fill="#08020e"/>
+  <!-- Couple Silhouette -->
+  <g transform="translate(265, 360)">
+    <!-- Man -->
+    <circle cx="25" cy="45" r="14" fill="#ffb7b2"/>
+    <path d="M12,60 Q25,58 38,60 L40,115 L10,115 Z" fill="#ffb7b2"/>
+    <!-- Woman with Head leaning -->
+    <circle cx="48" cy="48" r="13" fill="#ffccd5"/>
+    <path d="M35,63 Q48,60 60,65 L62,115 L32,115 Z" fill="#ffccd5"/>
+    <!-- Connected Hands & Heart -->
+    <path d="M36,30 C36,20 22,20 22,32 C22,44 36,52 36,52 C36,52 50,44 50,32 C50,20 36,20 36,30 Z" fill="#ff3366" filter="url(#glow)" transform="translate(-1,-15) scale(0.6)"/>
+  </g>
+  <!-- Text Label -->
+  <text x="300" y="555" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="bold" fill="#fcd34d" text-anchor="middle" letter-spacing="3">DECEMBER 12, 2023</text>
+  <text x="300" y="580" font-family="'Great Vibes', cursive, sans-serif" font-size="20" fill="#ffe4e6" text-anchor="middle">The Day Our Story Began ✨</text>
+</svg>
