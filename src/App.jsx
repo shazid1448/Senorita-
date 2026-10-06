@@ -9,9 +9,10 @@ import SpecialDatesSection from './components/specialDates/SpecialDatesSection';
 import FuturePlansSection from './components/futurePlans/FuturePlansSection';
 import PrivateSpaceSection from './components/privateSpace/PrivateSpaceSection';
 import Footer from './components/footer/Footer';
-import AdminModal from './components/admin/AdminModal';
 import HeartCursor from './components/common/HeartCursor';
 import FloatingPetals from './components/common/FloatingPetals';
+
+const AdminModal = React.lazy(() => import('./components/admin/AdminModal'));
 
 export default function App() {
   const [adminOpen, setAdminOpen] = useState(false);
@@ -57,8 +58,12 @@ export default function App() {
       {/* 9. Footer */}
       <Footer onOpenAdmin={() => setAdminOpen(true)} />
 
-      {/* Admin Studio 8-Tab Modal */}
-      <AdminModal isOpen={adminOpen} onClose={() => setAdminOpen(false)} />
+      {/* Admin Studio 8-Tab Modal (Lazy Loaded) */}
+      {adminOpen && (
+        <React.Suspense fallback={null}>
+          <AdminModal isOpen={adminOpen} onClose={() => setAdminOpen(false)} />
+        </React.Suspense>
+      )}
     </div>
   );
 }
