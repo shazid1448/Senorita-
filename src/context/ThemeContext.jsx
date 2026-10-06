@@ -13,12 +13,19 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     const root = document.documentElement;
+    const themeColor = theme === 'light' ? '#FAF3F6' : '#0B0710';
     if (theme === 'light') {
       root.classList.remove('dark');
       root.classList.add('light');
+      root.style.backgroundColor = '#FAF3F6';
     } else {
       root.classList.remove('light');
       root.classList.add('dark');
+      root.style.backgroundColor = '#0B0710';
+    }
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute('content', themeColor);
     }
     try {
       localStorage.setItem('romantic_theme_v2', theme);

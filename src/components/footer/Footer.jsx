@@ -8,7 +8,7 @@ export default function Footer({ onOpenAdmin }) {
   const { t, isBn } = useLanguage();
 
   return (
-    <footer className="relative border-t border-romantic-rose/15 bg-black/40 backdrop-blur-md pt-16 pb-12 px-4 safe-pb text-center">
+    <footer className="relative border-t border-romantic-rose/15 bg-gradient-to-b from-transparent to-romantic-burgundy-dark/20 backdrop-blur-sm pt-16 pb-12 px-4 safe-pb text-center">
       <div className="max-w-4xl mx-auto space-y-6">
         {/* Monogram Seal */}
         <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-romantic-burgundy/60 border border-romantic-rose/40 text-romantic-rose shadow-glow-rose">

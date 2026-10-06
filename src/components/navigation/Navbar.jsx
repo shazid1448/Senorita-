@@ -47,8 +47,8 @@ export default function Navbar({ onOpenAdmin }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 safe-pt px-2 sm:px-6 md:px-8 ${
-        isScrolled ? 'py-2' : 'py-3 sm:py-5'
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 px-2 sm:px-6 md:px-8 ${
+        isScrolled ? 'pt-2 pb-2' : 'pt-2.5 pb-2 sm:pt-4 sm:pb-3'
       } ${
         isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
       }`}

@@ -18,7 +18,7 @@ export default function App() {
   const [adminOpen, setAdminOpen] = useState(false);
 
   return (
-    <div className="relative min-h-[100svh] overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white">
+    <div className="relative min-h-[100svh] bg-romantic-bg text-romantic-text overflow-x-hidden selection:bg-romantic-rose/30 selection:text-white">
       {/* Desktop Heart Cursor Follower */}
       <HeartCursor />
 
