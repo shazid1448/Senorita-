@@ -8,7 +8,12 @@ export function ContentProvider({ children }) {
     try {
       const saved = localStorage.getItem('romantic_content_v2');
       if (saved) {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        return {
+          ...DEFAULT_CONTENT,
+          ...parsed,
+          couplePhoto: parsed.couplePhoto || DEFAULT_CONTENT.couplePhoto
+        };
       }
     } catch (e) {
       console.error('Error reading localStorage content:', e);

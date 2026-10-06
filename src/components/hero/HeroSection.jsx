@@ -14,6 +14,7 @@ export default function HeroSection() {
   const subtitle = getField(content.hero, 'subtitle') || content.hero.subtitle;
   const quote = getField(content.hero, 'quote') || content.hero.quote;
   const badge = getField(content.hero, 'badge') || content.hero.badge;
+  const couplePhoto = content.couplePhoto || content.hero?.couplePhoto || "/assets/images/couple-hero.svg";
 
   return (
     <section
@@ -26,8 +27,8 @@ export default function HeroSection() {
         <div className="w-[20rem] sm:w-[32rem] md:w-[36rem] h-[20rem] sm:h-[32rem] md:h-[36rem] rounded-full border border-romantic-burgundy/20 animate-spin-slow [animation-direction:reverse]" />
       </div>
 
-      <div className="w-full max-w-4xl mx-auto space-y-5 sm:space-y-6">
-        {/* Top Floating Badge */}
+      <div className="w-full max-w-4xl mx-auto space-y-4 sm:space-y-5">
+        {/* Top Floating Badge: Eternally Bound Together */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -41,32 +42,30 @@ export default function HeroSection() {
           <Heart className="w-3 h-3 text-romantic-rose-bright fill-romantic-rose-bright/50" />
         </motion.div>
 
-        {/* Romantic Couple Hero Portrait Photo */}
-        {(content.couplePhoto || content.hero?.couplePhoto) && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 15 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="relative mx-auto my-1 sm:my-2 inline-block group"
-          >
-            {/* Ambient Animated Glowing Halo */}
-            <div className="absolute -inset-2 sm:-inset-2.5 rounded-full bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy-light opacity-75 blur-md group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse-glow" />
+        {/* Romantic Couple Picture - Right Under Eternally Bound Together */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85, y: 15 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="relative mx-auto my-2 sm:my-3 inline-block group"
+        >
+          {/* Ambient Glowing Halo */}
+          <div className="absolute -inset-2 sm:-inset-3 rounded-full bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy opacity-80 blur-md group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse-glow" />
 
-            {/* Photo Avatar Frame */}
-            <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full p-1 sm:p-1.5 bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy shadow-2xl overflow-hidden border-2 border-white/25">
-              <img
-                src={content.couplePhoto || content.hero?.couplePhoto}
-                alt={coupleTitle}
-                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 select-none"
-              />
-            </div>
+          {/* Photo Avatar Frame */}
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full p-1 sm:p-1.5 bg-gradient-to-tr from-romantic-rose via-romantic-gold to-romantic-burgundy shadow-2xl overflow-hidden border-2 border-white/30">
+            <img
+              src={couplePhoto}
+              alt={coupleTitle}
+              className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 select-none bg-romantic-burgundy-dark"
+            />
+          </div>
 
-            {/* Floating Heart Accent Badge */}
-            <div className="absolute bottom-0 right-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-romantic-burgundy border-2 border-romantic-gold/80 flex items-center justify-center text-romantic-rose shadow-lg group-hover:scale-110 transition-transform">
-              <Heart className="w-4 h-4 fill-romantic-rose-bright text-romantic-rose-bright animate-heartbeat" />
-            </div>
-          </motion.div>
-        )}
+          {/* Floating Heart Accent Badge */}
+          <div className="absolute bottom-1 right-1 sm:bottom-1.5 sm:right-1.5 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-romantic-burgundy border-2 border-romantic-gold/80 flex items-center justify-center text-romantic-rose shadow-lg group-hover:scale-115 transition-transform">
+            <Heart className="w-4 h-4 fill-romantic-rose-bright text-romantic-rose-bright animate-heartbeat" />
+          </div>
+        </motion.div>
 
         {/* Grand Couple Monogram & Names */}
         <motion.div
